@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.zii.wanandroid"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //android
+    implementation libs.androidx_appcompat
+    implementation libs.android_material
+    implementation libs.androidx_constraintlayout
+    implementation libs.androidx_vectordrawable
+
+    //test
+    testImplementation libs.test_junit
+    androidTestImplementation libs.test_runner
+    androidTestImplementation libs.test_espresso
+}

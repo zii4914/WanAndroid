@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //android
+    api libs.androidx_appcompat
+    api libs.androidx_constraintlayout
+
+    //log
+    api libs.logger
+    //rx
+    api libs.autodispose
+    //net
+    api libs.okhttp
+    api libs.retrofit
+    api libs.retrofit_gson_convert
+    api libs.retrofit_rxjava_adapter
+    //other
+    implementation libs.butterknife
+    annotationProcessor libs.butterknife_compiler
+}

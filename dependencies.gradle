@@ -1,0 +1,100 @@
+ext.app = [
+        "applicationId": 'com.zii.wanandroid',
+        "versionCode": 1,
+        "versionName": '1.0',
+
+        "compileSdkVersion": 28,
+        "minSdkVersion": 19,
+        "targetSdkVersion": 28,
+]
+ext.versions = [
+        //android
+        "androidx_appcompat": "1.1.0-alpha01",
+        "android_material": "1.1.0-alpha02",
+        "androidx_constraintlayout": "1.1.3",
+        "androidx_vectordrawable": "1.1.0-alpha01",
+
+        //log
+        "logger": '2.2.0',
+
+        //picture
+        "glide": '4.8.0',
+
+        //database
+        "greendao": '3.2.2',
+
+        //recyclerview
+        "BRVAH": '2.9.46',
+        "BRVAH_androix": '2.9.45-androidx',
+
+        //animation
+        "Lottie": '3.0.0-beta1',//2.8以上版本仅支持androidx
+
+        //rxjava
+        "rxjava2": '2.2.6',
+        "rxandroid": '2.1.0',
+        "autodispose": '1.1.0',
+
+        //other
+        "butterknife": '10.0.0',
+
+        //eventbus
+        "eventbus": '3.1.1',
+
+        //net
+        "okhttp": '3.12.1',
+        "retrofit": '2.5.0',
+
+        //test
+        "test_junit": "4.12",
+        "test_runner": "1.1.1",
+        "test_espresso": "3.1.1",
+]
+
+ext.libs = [
+        //android
+        "androidx_appcompat": "androidx.appcompat:appcompat:$versions.androidx_appcompat",
+        "android_material": "com.google.android.material:material:$versions.android_material",
+        "androidx_constraintlayout": "androidx.constraintlayout:constraintlayout:$versions.androidx_constraintlayout",
+        "androidx_vectordrawable": "androidx.vectordrawable:vectordrawable:$versions.androidx_vectordrawable",
+
+        //log
+        "logger": "com.orhanobut:logger:$versions.logger",
+
+        //picture
+        "glide": "com.github.bumptech.glide:glide:$versions.glide",
+        "glidecompiler": "com.github.bumptech.glide:compiler:$versions.glide",
+
+        //database
+        "greendao": "org.greenrobot:greendao:$versions.greendao",
+
+        //recyclerview
+        "BRVAH": "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.BRVAH_androix",
+
+        //animation
+        "lottie": "com.airbnb.android:lottie:$versions.Lottie",
+
+        //rxjava
+        "rxjava2": "io.reactivex.rxjava2:rxjava:$versions.rxjava2",
+        "rxjava2_android": "io.reactivex.rxjava2:rxandroid:$versions.rxandroid",
+        "autodispose": "com.uber.autodispose:autodispose-android-archcomponents:$versions.autodispose",
+
+        //eventbus
+        "eventbus": "org.greenrobot:eventbus:$versions.eventbus",
+
+        //net
+        "okhttp": "com.squareup.okhttp3:okhttp:$versions.okhttp",
+        "retrofit": "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        "retrofit_gson_convert": "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+        "retrofit_rxjava_adapter": "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+
+        //other
+        "butterknife": "com.jakewharton:butterknife:$versions.butterknife",
+        "butterknife_compiler": "com.jakewharton:butterknife-compiler:$versions.butterknife",
+        "butterknife_plugin": "com.jakewharton:butterknife-gradle-plugin:$versions.butterknife",
+
+        //test
+        "test_junit": "junit:junit:$versions.test_junit",
+        "test_runner": "androidx.test:runner:$versions.test_runner",
+        "test_espresso": "androidx.test.espresso:espresso-core:$versions.test_espresso",
+]
